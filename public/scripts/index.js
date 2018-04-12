@@ -6,7 +6,8 @@ const scoreList = document.getElementById('scoreList');
 let username = '';
 
 window.onload = () => {
-  username = prompt('Username:');
+  username =
+    prompt('Username:') || `Anonymous#${Math.floor(Math.random() * 9999) + 1}`;
 };
 
 sendMessage.addEventListener('submit', (e) => {
