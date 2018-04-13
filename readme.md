@@ -1,5 +1,7 @@
 # Snake Your Friend's Snakes
 
+Live deployed demo can be found [here](https://real-time-web-lhlbqzzcsq.now.sh/).
+
 ## Table of Contents
 
 <!-- TOC -->
@@ -11,8 +13,9 @@
     * [Installing](#installing)
     * [Usage](#usage)
   * [Functionality](#functionality)
-  * [Technologies used](#technologies-used)
+  * [Technologies Used](#technologies-used)
   * [Controls](#controls)
+  * [Known Issues & Future Plans](#known-issues--future-plans)
 
 <!-- /TOC -->
 
@@ -46,25 +49,34 @@ Then, visit `localhost:3000`, send your friends a link and start _absolutely dem
 
 ## Functionality
 
-* Have your own unique username, or do you prefer to anonymous?
 * Control your own snake!
-* Sabotage your friends by influencing their snake's movement
 * Smack talk your opponents
+* A simple emoji & tag system
+* Have your own unique username, or go anonymous
+* Sabotage your friends by influencing their snake's movement
 * See how you and your opponents are doing through a scoreboard
 
-## Technologies used
+## Technologies Used
 
-This application is real-time by leveraging the power of `socket.io` a web-sockets implementation for node.js.
+This application is real-time by leveraging the power of `socket.io` a web-sockets implementation for `node.js`.
 
-Further, a more, this project uses the `pug` templating language, because well, i [_really_](https://jamerrone.github.io/wafs/app/#home) like dogs.
+Furthermore, this project uses the `pug` templating language, because well, i [_really_](https://jamerrone.github.io/wafs/app/#home) like dogs.
 
 ## Controls
 
 As the controls aren't currently documented, here is a simple controls map.
 
 | **Control** | **Command** |
-| ----------- | ----------- |
-| up          | /up         |
-| down        | /down       |
-| left        | /left       |
-| right       | /right      |
+| :---------: | ----------- |
+|      ↑      | /up         |
+|      ↓      | /down       |
+|      ←      | /left       |
+|      →      | /right      |
+
+## Known Issues & Future Plans
+
+* The current UI is not user-friendly, and simply ugly.
+* Add a help function that explains the game controls.
+* Usernames are not unique, two users can share the same username.
+* Usernames are not linked to the socket ID, this means that whenever a user leaves the game there username and score are kept.
+* No database or local files are being used, everything is saved in the server memory.
