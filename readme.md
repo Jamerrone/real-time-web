@@ -1,32 +1,40 @@
-# snake your friends snakes
+# Snake Your Friend's Snakes
 
-![coverimage](cover.png)
+![Cover Image](./cover.png)
 
 ## Table of Contents
 
-* [Description](#description)
-* [Functionality](#functionality)
-* [install/usage requirements](#installusage-requirements)
-* [Technologies used](#technologies-used)
-* [install/usage guide](#installusage-guide)
-* [Controls](#controls)
+## Project Description
 
-## Description
+Welcome to `Snake Your Friend's Snakes` the chat game, a multiplayer snake game where your input influences the other player's snakes as well! Here the objective is to score as many points as you can by eating the red squares/fruits while preventing your competition from doing so. Of course, you can insult your friends through the chat functionality as well!
 
-Welcome to James `snake your friends snakes`, a multiplayer snake game where your input influences the other players aswell! Here the objective is to score as many points as you can by eating the red squares, while preventing your competetion from doing so. Ofcourse you can insult your friends through the chat functionality aswell!
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Installing
+
+After cloning the repository you can install the required dependencies using npm:
+
+```javascript
+$ npm install
+```
+
+### Usage
+
+In order to launch a development environment:
+
+```javascript
+$ npm start
+```
 
 ## Functionality
 
-* Have your own unique name, or do you prefer to anonymous?
+* Have your own unique username, or do you prefer to anonymous?
 * Control your own snake!
-* Sabotage your friends by influencing their movement
+* Sabotage your friends by influencing their snake's movement
 * Smack talk your opponents
-* See how you and your opponents are doing
-
-## install/usage requirements
-
-`npm` version used `5.6.0`
-`node` version used `v8.9.4`
+* See how you and your opponents are doing through a scoreboard
 
 ## Technologies used
 
