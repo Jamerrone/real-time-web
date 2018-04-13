@@ -1,8 +1,22 @@
 # Snake Your Friend's Snakes
 
-![Cover Image](./cover.png)
-
 ## Table of Contents
+
+<!-- TOC -->
+
+* [Snake Your Friend's Snakes](#snake-your-friends-snakes)
+  * [Table of Contents](#table-of-contents)
+  * [Project Description](#project-description)
+  * [Getting Started](#getting-started)
+    * [Installing](#installing)
+    * [Usage](#usage)
+  * [Functionality](#functionality)
+  * [Technologies used](#technologies-used)
+  * [Controls](#controls)
+
+<!-- /TOC -->
+
+![Cover Image](./cover.png)
 
 ## Project Description
 
@@ -28,6 +42,8 @@ In order to launch a development environment:
 $ npm start
 ```
 
+Then, visit `localhost:3000`, send your friends a link and start _absolutely demolishing_ them.
+
 ## Functionality
 
 * Have your own unique username, or do you prefer to anonymous?
@@ -38,29 +54,13 @@ $ npm start
 
 ## Technologies used
 
-This application is realtime by leveraging the power of `socket.io` a web-sockets implementation for node.
+This application is real-time by leveraging the power of `socket.io` a web-sockets implementation for node.js.
 
-Further a more, this project uses the `pug` templating language, because well, i [_really_](https://jamerrone.github.io/wafs/app/#home) like dogs.
-
-## install/usage guide
-
-First, ensure that you have all dependencies as specificed in the `package.json`
-
-```
-npm install
-```
-
-Then, you can go ahead and start the application by simply doing
-
-```
-npm start
-```
-
-Then, visit `localhost:3000`, send your friends a link and start _absolutely demolishing_ them.
+Further, a more, this project uses the `pug` templating language, because well, i [_really_](https://jamerrone.github.io/wafs/app/#home) like dogs.
 
 ## Controls
 
-As the controls aren't documented, here is a simple list
+As the controls aren't currently documented, here is a simple controls map.
 
 | **Control** | **Command** |
 | ----------- | ----------- |
