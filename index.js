@@ -14,8 +14,9 @@ io.on('connection', function(socket) {
   socket.on('newMessage', function(data) {
     io.emit('newMessage', {
       message: data.message,
-      username: data.username || 'Anonymous',
+      username: data.username,
       userScore: data.userScore,
+      userColor: data.userColor,
     });
   });
   socket.on('scoreUpdate', function(data) {
@@ -25,5 +26,5 @@ io.on('connection', function(socket) {
 });
 
 http.listen(3000, function() {
-  console.log('listening on *:3000');
+  console.log('http://localhost:3000');
 });

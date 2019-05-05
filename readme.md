@@ -1,28 +1,82 @@
-# Real Time Web course repo
+# Snake Your Friend's Snakes
 
-This is the course repo for the 2018 edition of the course 'Real Time Web' which is part of the minor 'web' taught at the University of Applied Sciences Amsterdam.
+Live deployed demo can be found [here](https://real-time-web-lhlbqzzcsq.now.sh/).
 
-During this course, students will:
-* Build a Node Web App which consumes an external data source through an API and serves a frontend using routing and templating techniques.
-* Create a "live" web app which reflects changes to the back-end data model in reactive front-end views, using real-time, event-based, messaging technologies like sockets or server-sent-events.
-* Describe their work in a professional readme with insightful diagrams showing the life cycle of their data.
+## Table of Contents
 
-## Week 1
-[Slides](https://drive.google.com/open?id=1QxeKsSXnf9poJFWoEe_slHuMb7apB-2eNyUTzi18kcQ)
+<!-- TOC -->
 
-[Assignments](https://drive.google.com/open?id=1OUspHz0enLpoVjbyHMHpAQCjSEmkn8rfHbkoSuwjw4M) (in Dutch)
+* [Snake Your Friend's Snakes](#snake-your-friends-snakes)
+  * [Table of Contents](#table-of-contents)
+  * [Project Description](#project-description)
+  * [Getting Started](#getting-started)
+    * [Installing](#installing)
+    * [Usage](#usage)
+  * [Functionality](#functionality)
+  * [Technologies Used](#technologies-used)
+  * [Controls](#controls)
+  * [Known Issues & Future Plans](#known-issues--future-plans)
 
-## Week 2
-[Slides](https://drive.google.com/open?id=1-tI7rFjHchbph6FEqpNvDi7XCh3Uy-3bohi_jBdZhcQ)
+<!-- /TOC -->
 
-[Assignments](https://drive.google.com/open?id=1rjE1bG-rrgfEOssMxCYr7Q0Ba5BJs9WKkvVvjI7y2fQ) (in Dutch)
+![Cover Image](./cover.png)
 
-## Week 3
-[Slides](https://drive.google.com/open?id=1BHoe8Fif7nLA00V4WEANJANnObxHBnVnwnQHnfXl4aM)
+## Project Description
 
-[Assignments](https://drive.google.com/open?id=1zoRC5kDeSQad8vdi62u6AEj_SfpvPzKE7wjYTsdO2JI) (in Dutch)
+Welcome to `Snake Your Friend's Snakes` the chat game, a multiplayer snake game where your input influences the other player's snakes as well! Here the objective is to score as many points as you can by eating the red squares/fruits while preventing your competition from doing so. Of course, you can insult your friends through the chat functionality as well!
 
-## Grading
-In the first and second week you will receive oral feedback on your assignments. In week three you will have a chance to present your final assignment during an oral exam. This assessment will make up 100% of your grade for this course.
+## Getting Started
 
-> If you're seeing this message on a forked repo, it means one of our students hasn't changed the description yet 😈
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Installing
+
+After cloning the repository you can install the required dependencies using npm:
+
+```javascript
+$ npm install
+```
+
+### Usage
+
+In order to launch a development environment:
+
+```javascript
+$ npm start
+```
+
+Then, visit `localhost:3000`, send your friends a link and start _absolutely demolishing_ them.
+
+## Functionality
+
+* Control your own snake!
+* Smack talk your opponents
+* A simple emoji & tag system
+* Have your own unique username, or go anonymous
+* Sabotage your friends by influencing their snake's movement
+* See how you and your opponents are doing through a scoreboard
+
+## Technologies Used
+
+This application is real-time by leveraging the power of `socket.io` a web-sockets implementation for `node.js`.
+
+Furthermore, this project uses the `pug` templating language, because well, i [_really_](https://jamerrone.github.io/wafs/app/#home) like dogs.
+
+## Controls
+
+As the controls aren't currently documented, here is a simple controls map.
+
+| **Control** | **Command** |
+| :---------: | ----------- |
+|      ↑      | /up         |
+|      ↓      | /down       |
+|      ←      | /left       |
+|      →      | /right      |
+
+## Known Issues & Future Plans
+
+* The current UI is not user-friendly, and simply ugly.
+* Add a help function that explains the game controls.
+* Usernames are not unique, two users can share the same username.
+* Usernames are not linked to the socket ID, this means that whenever a user leaves the game there username and score are kept.
+* No database or local files are being used, everything is saved in the server memory.
